@@ -14,7 +14,7 @@
     <!--  <img [src]="urlImage"> property-binding -->
     <!-- </article> -->
 
-    <article>
+  <!--  <article>
       <h3>
         Class e Style Binding
       </h3>
@@ -40,6 +40,40 @@
           This is a dark alert—check it out!
         </div>
       </div>
+    </article>
+-->
+    <article>
+      <h3>Event Binding</h3>
+      <div>
+        <button (click)="botaoClicado()"
+        class="btn btn-primary">
+          Clique me!
+        </button>
+
+        <br>
+        <br>
+
+
+        <input type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
+        #campoInput />
+
+        <p>valor Atual: {{ valorAtual }}</p>
+        <p>valor salvo: {{ valorSalvo }}</p>
+
+        <br>
+        <span
+        (mouseover)="onMouseOverOut()"
+        (mouseout)="onMouseOverOut()"
+        [class.destaque]="isMouseOver">
+          Passe o mouse em cima de mim</span>
+
+
+
+      </div>
+
     </article>
 
   </section>

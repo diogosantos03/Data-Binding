@@ -4,17 +4,46 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css']
+  /*styles: [
+  `
+  .destaque{
+    background-color:  aqua;
+    font-weight: bold;
+  }
+
+  `
+]*/
 })
 export class DataBindingComponent implements OnInit {
   url: string = 'http://loiane.com';
   cursoAngular:boolean = true;
   urlImage:string = 'https://www.torcedores.com/content/uploads/2017/06/corinthians-mercado.jpg';
 
+  valorAtual: string = "";
+  valorSalvo: string = "";
+  isMouseOver:boolean = false;
+
   getValor(){
     return 2;
   }
   getCurtirCurso(){
     return true;
+  }
+
+  botaoClicado(){
+    alert('Botão clicado!');
+  }
+  salvarValor(valor){
+    this.valorSalvo = valor;
+  }
+
+  onMouseOverOut(){
+    this.isMouseOver = !this.isMouseOver;
+  }
+
+  onKeyUp(evento: KeyboardEvent){
+    /*console.log((<HTMLInputElement>evento.target).value);*/
+    this.valorAtual = (<HTMLInputElement>evento.target).value);
   }
 
   constructor() { }
