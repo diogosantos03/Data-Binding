@@ -1,6 +1,6 @@
 <div style="text-align:center">
   <section class="property-binding">
-    <article>
+    <!--<article>
       <h3>Interpolation / Interpolação</h3>
       <p>String renderizada com Interpolação: {{ url }} </p>
       <p>O resultado de 1+1 é: {{ 1+1 }}</p>
@@ -9,10 +9,39 @@
     </article>
 
     <article>
-      <h3>Property Binding</h3>
-      <img src="{{urlImage}}"> <!--Interpolação-->
-      <img [src]="urlImage"> <!--property binding-->
+      <h3>Property Binding</h3> -->
+    <!--  <img src="{{urlImage}}"  Interpolation -->
+    <!--  <img [src]="urlImage"> property-binding -->
+    <!-- </article> -->
+
+    <article>
+      <h3>
+        Class e Style Binding
+      </h3>
+      <div>
+        Selecione uma classe:
+        <select #class (change)="0">
+          <option value="alert-success">Sucesso</option>
+          <option value="alert-secondary">Segundario</option>
+          <option value="alert-primary">Primário</option>
+          <option value="alert-info">Informações</option>
+        </select>
+        <br><br>
+        <div class="alert" role="alert">
+          This is a warning alert—check it out!
+        </div>
+        <div class="alert" role="alert">
+          This is a info alert—check it out!
+        </div>
+        <div class="alert" role="alert">
+          This is a light alert—check it out!
+        </div>
+        <div class="alert" role="alert">
+          This is a dark alert—check it out!
+        </div>
+      </div>
     </article>
+
   </section>
 
 </div>
