@@ -1,6 +1,6 @@
 <div style="text-align:center">
-  <section class="property-binding">
-    <!--<article>
+<!--  <section class="property-binding">
+    <article>
       <h3>Interpolation / Interpolação</h3>
       <p>String renderizada com Interpolação: {{ url }} </p>
       <p>O resultado de 1+1 é: {{ 1+1 }}</p>
@@ -42,7 +42,7 @@
       </div>
     </article>
 -->
-    <article>
+<!--    <article>
       <br>
       <span
         (mouseover) = "mouseOver()"
@@ -92,5 +92,36 @@
     </article>
 
   </section>
+-->
 
+<!--  <section class="two-way-binding">
+    <article>
+      <br>
+      <h3>Two-way-binding</h3>
+      <div>
+
+        <input type="text"
+          [value]="nome"
+          (input) = "nome = $event.target.value"/>
+
+
+
+        <p>Você digitou o nome: {{ nome }}</p>
+      </div>
+
+      <div>
+        <input type="text"
+        [value]="pessoa.nome"
+        (input) = "pessoa.nome = $event.target.value"/>
+
+        <input type="text"
+        [value]="pessoa.idade"
+        (input) = "pessoa.idade = $event.target.value"/>
+
+        <p>Meu nome é: {{ pessoa.nome }} e tenho {{ pessoa.idade}} anos de idade</p>
+      </div>
+
+    </article>
+  </section> -->
+<app-meu-form></app-meu-form>
 </div>
