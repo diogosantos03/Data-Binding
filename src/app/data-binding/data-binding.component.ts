@@ -22,6 +22,7 @@ export class DataBindingComponent implements OnInit {
   valorAtual: string = "";
   valorSalvo: string = "";
   isMouseOver:boolean = false;
+  isMouseOverTitle:boolean = false;
 
   getValor(){
     return 2;
@@ -44,6 +45,10 @@ export class DataBindingComponent implements OnInit {
   onKeyUp(evento: KeyboardEvent){
     /*console.log((<HTMLInputElement>evento.target).value);*/
     this.valorAtual = (<HTMLInputElement>evento.target).value);
+  }
+
+  mouseOver(){
+    this.isMouseOverTitle = !this.isMouseOverTitle;
   }
 
   constructor() { }

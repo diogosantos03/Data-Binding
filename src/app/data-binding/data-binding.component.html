@@ -43,7 +43,22 @@
     </article>
 -->
     <article>
-      <h3>Event Binding</h3>
+      <br>
+      <span
+        (mouseover) = "mouseOver()"
+        (mouseout) = "mouseOver()"
+        [class.destaque2]="isMouseOverTitle"
+        class="text-info">
+
+          Aula 11
+
+        </span>
+        <br>
+
+        <h3>Event Binding</h3>
+
+        <br>
+
       <div>
         <button (click)="botaoClicado()"
         class="btn btn-primary">

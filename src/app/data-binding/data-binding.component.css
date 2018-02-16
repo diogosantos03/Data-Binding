@@ -2,3 +2,11 @@
   background-color:  aqua;
   font-weight: bold;
 }
+
+.destaque2{
+  font-size: 50px;
+  font-weight: bold;
+  color: aqua;
+  background-color: grey;
+  align-items: center;
+}
