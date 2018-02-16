@@ -50,7 +50,7 @@ export class DataBindingComponent implements OnInit {
   //#VaiCorinthians
   onKeyUp(evento: KeyboardEvent){
     /*console.log((<HTMLInputElement>evento.target).value);*/
-    this.valorAtual = (<HTMLInputElement>evento.target).value;);
+    this.valorAtual = (<HTMLInputElement>evento.target).value;
   }
 
   mouseOver(){
